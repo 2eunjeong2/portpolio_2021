@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/index_section2.js"></script>
+    <script>
+        function slideSwitch() {
+            var $active = $('#gallery img.active');
+            if ($active.length == 0) $active = $('#gallery img:last');
+            var $next = $active.next().length ? $active.next() : $('#gallery img:first');
+
+            $active.addClass('last-active');
+
+            $next.css({
+                    opacity: 0.0
+                })
+                .addClass('active')
+                .animate({
+                    opacity: 1.0
+                }, 1000, function () {
+                    $active.removeClass('active last-active');
+                });
+        }
+        $(function () {
+            setInterval('slideSwitch()', 3000);
+        });
+    </script>
+    <title>코카콜라 index</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="section1" class="mn">
+            <div id="header_wrap">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo1_black.png" width="170" height="45" alt="로고">
+                        <span class="hidden">코카콜라</span>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul class="cf">
+                        <li><a href="#sub_1">PRODUCT</a>
+                            <ul class="sub">
+                                <li><a href="#sub_1">스파클링</a></li>
+                                <li><a href="#none">물</a></li>
+                                <li><a href="#none">주 스&식물성 음료</a></li>
+                                <li><a href="#none">이온&에너지 음료</a></li>
+                                <li><a href="#none">라이프스타일 음료</a></li>
+                                <li><a href="#none">티&커피</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sub_2">COKE STORY</a>
+                            <ul class="sub">
+                                <li><a href="#sub_2">코카콜라 CF</a></li>
+                                <li><a href="#none">홍보 포스터</a></li>
+                                <li><a href="#none">사회 활동</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sub_3">NEWS</a>
+                            <ul class="sub">
+                                <li><a href="#sub_3">공지사항</a></li>
+                                <li><a href="#none">브랜드 소식</a></li>
+                                <li><a href="#none">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sub_4">CUSTOMER</a>
+                            <ul class="sub">
+                                <li><a href="#sub_4">FAQ</a></li>
+                                <li><a href="#none">고객의 소리</a></li>
+                                <li><a href="#none">신규거래 신청</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sub_5">COMPANY</a>
+                            <ul class="sub">
+                                <li><a href="#sub_5">회사 소개</a></li>
+                                <li><a href="#none">인사말</a></li>
+                                <li><a href="#none">정도경영소개</a></li>
+                                <li><a href="#none">공장,판매점</a></li>
+                                <li><a href="#none">인재채용</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sub_shadow"></div>
+            </div> <!-- header_wrap -->
+            <div id="content1" class="cf">
+                <div id="BgTxt"></div>
+                <div id="leftTxt">
+                    <p>
+                        feel<br>
+                        Coke!
+                    </p>
+                </div>
+                <div id="product_list">
+                    <div id="product_wrap">
+                        <div id="show_product">
+                            <div id="product_1">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/sparkling2.png" alt="sparkling">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/sparklingbg.png" alt="sparklingBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Spark<br>ling</a></div>
+                            </div>
+                            <div id="product_2">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/water.png" alt="water">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/waterbg.png" alt="waterBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Water</a></div>
+                            </div>
+                            <div id="product_3">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/juice2.png" alt="juice">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/juicebg.png" alt="juiceBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Juice&<br>Ades</a></div>
+                            </div>
+                            <div id="product_4">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/power.png" alt="power">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/powerbg.png" alt="powerBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Sports <br>Drink</a></div>
+                            </div>
+                            <div id="product_5">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/life.png" alt="life">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/lifebg.png" alt="lifeBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Life <br>Style</a></div>
+                            </div>
+                            <div id="product_6">
+                                <ul>
+                                    <li class="product">
+                                        <a href="#none">
+                                            <img src="images/index/section1/tea2.png" alt="tea">
+                                        </a>
+                                    </li>
+                                    <li class="bg">
+                                        <img src="images/index/section1/teabg.png" alt="teaBg">
+                                    </li>
+                                </ul>
+                                <div class="right_txt"><a href="#none">Tea&<br>Coffee</a></div>
+                            </div>
+                        </div>
+                        <div id="bottom_product">
+                            <div id="product_left" class="fl">
+                                <ul>
+                                    <li>
+                                        <a href="#product_1" class="On">
+                                            <img src="images/index/section1/sparkling2.png" alt="sparkling" width="120">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#product_2">
+                                            <img src="images/index/section1/water.png" alt="water" width="120">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#product_3">
+                                            <img src="images/index/section1/juice2.png" alt="juice" width="120">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="product_right" class="fr">
+                                <ul>
+                                    <li>
+                                        <a href="#product_4">
+                                            <img src="images/index/section1/power.png" alt="power" width="120">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#product_5">
+                                            <img src="images/index/section1/life.png" alt="life" width="120">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#product_6">
+                                            <img src="images/index/section1/tea.png" alt="tea" width="120">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section2" class="mn">
+            <div id="left_txt2">
+            </div>
+            <div id="right_txt2">
+            </div>
+            <div id="section2_wrap">
+                <div id="slider-wrapper">
+                    <ul class="s-slides">
+                        <li class="first" id="slide-1">
+                            <p>Cokacola</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/ch6WMBjgmjc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-2">
+                            <p>Sprite</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/Ol9qPXU3fiE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-3">
+                            <p>Toreta</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/r9RAmbl2Ia8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-4">
+                            <p>W</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/bsJIOkDw-3Q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-5">
+                            <p>Ades</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/oS9S5VJGyKk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-6">
+                            <p>Seagram's</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/F6xUCwqVvwE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                        <li id="slide-7">
+                            <p>Fanta</p>
+                            <iframe width="1100" muted src="https://www.youtube.com/embed/hDbYnMLOZAA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <div class="s-thumbs">
+                        <ul>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb1.jpg" alt="thumb1">
+                                   <figcaption>
+                                     <p>Cocacola</p>
+                                   </figcaption>
+                                   <a href="#slide-1"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb2.jpg" alt="thumb2">
+                                   <figcaption>
+                                     <p>Sprite</p>
+                                   </figcaption>
+                                   <a href="#slide-2"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb3.jpg" alt="thumb3">
+                                   <figcaption>
+                                     <p>Toreta</p>
+                                   </figcaption>
+                                   <a href="#slide-3"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb4.jpg" alt="thumb4">
+                                   <figcaption>
+                                     <p>W</p>
+                                   </figcaption>
+                                   <a href="#slide-4"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb5.jpg" alt="thumb5">
+                                   <figcaption>
+                                     <p>Ades</p>
+                                   </figcaption>
+                                   <a href="#slide-5"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb6.jpg" alt="thumb6">
+                                   <figcaption>
+                                     <p>Seagram's</p>
+                                   </figcaption>
+                                   <a href="#slide-6"></a>
+                                 </figure>
+                            </li>
+                            <li>
+                                <figure class="snip1200 fl">
+                                    <img src="images/index/section2/thumb7.jpg" alt="thumb7">
+                                   <figcaption>
+                                     <p>Fanta</p>
+                                   </figcaption>
+                                   <a href="#slide-7"></a>
+                                 </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prev1_2 fl">
+                        <img src="images/index/section2/left.png" class="prev1_1" width="30" alt="left1" />
+                    </div>
+                    <div class="next1_2 fr">
+                        <img src="images/index/section2/right.png" class="next1_1" width="30" alt="right1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="mn">
+            <div id="section3_wrap">
+                <div id="top_txt3">
+                    Brand Story
+                </div>
+                <div id="gallery">
+                    <img src="images/index/section3/img1.png" class="active" alt="코카콜라1">
+                    <img src="images/index/section3/img2.png" alt="코카콜라2">
+                    <img src="images/index/section3/img3.png" alt="코카콜라3">
+                    <img src="images/index/section3/img4.png" alt="코카콜라4">
+                </div>
+                <div id="txt_Box3">
+                    <h3>코카-콜라 음료</h3>
+                    <h4>아시아 최고, 세계 최고를 향해 끊임없이 도전하겠습니다.</h4>
+                    <p>
+                        2008년 1월, 국내 최고의 소비자 마케팅 회사인 LG생활건강의 새로운<br>
+                        가족이 된 코카-콜라 음료는 코카-콜라사(The Coca-Cola Company)의<br>
+                        다양한 음료제품들을 국내에서 독점적으로 생산 판매하는 회사입니다.<br>
+                        <br>
+                        앞으로도 최고의 품질과 서비스를 바탕으로 소비자 여러분의 건강과 <br>
+                        아름다움을 생각하는 새로운 음료제품들을 선보임으로써 지금까지<br> '코카-콜라 음료'에 보내주신 사랑에 보답할 것을 약속드립니다. <br>
+                        <br>
+                        소비자 여러분의 아낌없는 성원과 사랑을 부탁드립니다. 감사합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4" class="mn">
+            <footer id="footer">
+                <div class="footer_link">
+                    <a href="#none">정도경영</a>
+                    <p>|</p>
+                    <a href="#none">법적고지</a>
+                    <p>|</p>
+                    <a href="#none">이메일주소무단수집 거부</a>
+                    <p>|</p>
+                    <a href="#none">개인정보처리방침</a>
+                    <p>|</p>
+                    <a href="#none">CONTACT US</a>
+                </div>
+                <div class="footer_contents">
+                    고객상담실
+                    <a href="#none" class="online">온라인 문의</a>
+                    <br>
+                    080-024-5999(이용시간 월~목 09:00-18:00, 금 09:00-17:30)
+                    <br>
+                    주소 : 경상남도 양산시 충렬로 269 (유산동)
+                    <br>
+                    코카-콜라음료(주) 대표이사 : 이정애 / 사업자등록번호 : 102-81-411121
+                </div>
+                <div class="footer_site">
+                    <select name="Related Site" class="cell" dir="ltl" style="cursor: pointer;">
+                        <option value="Related Site" selected><a href="#none">Related Site</a></option>
+                        <option value="코크 파트너 시스템"><a href="#none">코크 파트너 시스템</a></option>
+                        <option value="LG생활건강코카-콜라"><a href="#none">LG생활건강코카-콜라</a></option>
+                        <option value="미국본사"><a href="#none">미국본사</a></option>
+                        <option value="사이버 신문고"><a href="#none">사이버 신문고</a></option>
+                        <option value="한국 코카-콜라"><a href="#none">한국 코카-콜라</a></option>
+                        <option value="CPS 열린구매"><a href="#none">CPS 열린구매</a></option>
+                    </select>
+                </div>
+                <div class="footer_bottom">
+                    <img src="images/logo_footer.png" alt="코카콜라" width="140px" height="55px" class="fl">
+                    <p>COPYRIGHT ⓒ COCA-COLA BEVERAGE COMPANY. ALL RIGHTS RESERVED.</p>
+                    <div class="sns">
+                        <a href="#none"><i class="fab fa-facebook"></i></a>
+                        <a href="#none"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#none"><i class="fab fa-instagram"></i></a>
+                        <a href="#none"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

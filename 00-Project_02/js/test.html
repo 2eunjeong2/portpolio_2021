@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-1.9.1.min.js"></script>
+    <style>
+        .snbSwiper {
+            padding: 0 3px;
+            box-sizing: border-box;
+            background: powderblue;
+        }
+
+        .swiper-slide {
+            width: auto !important;
+        }
+
+        .swiper-slide a {
+            display: block;
+            text-align: center;
+        }
+
+        .swiper-slide .text {
+            margin: 0 5px;
+            padding: 16px 5px 8px 5px;
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            height: 47px;
+            white-space: nowrap;
+            font-size: 1rem;
+            line-height: 1em;
+            color: #333;
+        }
+
+        .on .text {
+            color: #1b64bc;
+            font-weight: bold;
+        }
+
+        .on .text:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #1b64bc;
+        }
+    </style>
+    <script>
+        $(function(){
+            var swiper = new Swiper('.snbSwiper', {
+            slidesPerView: 'auto',
+            preventClicks: true,
+            preventClicksPropagation: false,
+            observer: true,
+            observeParents: true
+        });
+        var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+        $snbSwiperItem.click(function(){
+            var target = $(this).parent();
+            $snbSwiperItem.parent().removeClass('on')
+            target.addClass('on');
+            muCenter(target);
+        })
+
+        function muCenter(target){
+            var snbwrap = $('.snbSwiper .swiper-wrapper');
+            var targetPos = target.position();
+            var box = $('.snbSwiper');
+            var boxHarf = box.width()/2;
+            var pos;
+            var listWidth=0;
+            
+            snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
+            
+            var selectTargetPos = targetPos.left + target.outerWidth()/2;
+            if (selectTargetPos <= boxHarf) { // left
+                pos = 0;
+            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                pos = listWidth-box.width();
+            }else {
+                pos = selectTargetPos - boxHarf;
+            }
+            
+            setTimeout(function(){snbwrap.css({
+                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+                "transition-duration": "500ms"
+            })}, 200);
+        }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="swiper-container snbSwiper" style="max-width:420px">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><span class="text">포도</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">블루베리</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">딸기</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">자두수박</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">바나나</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">망고스틴레드</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">사과</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">천도복숭아</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">수박</span></a></div>
+            <div class="swiper-slide"><a href="#"><span class="text">용과</span></a></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덕질메이트</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="themes/duckmae.css">
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div data-role="page" id="login">
+            <div data-role="content">
+                <h1 class="logo"><img src="img/logo.png" alt=""></h1>
+                <h2>덕질 메이트 찾으러<br>가볼까요?</h2>
+                <div class="login_box">
+                    <a href="#join" class="join_b">
+                        회원가입
+                    </a>
+                    <p>or</p>
+                    <a href="#join" class="sns_b1">
+                        카카오톡으로 로그인
+                        <img src="img/login/kakao.png" alt="">
+                    </a>
+                    <a href="#join" class="sns_b2">
+                        네이버로 로그인
+                        <img src="img/login/naver.png" alt="">
+                    </a>
+                    <a href="#join" class="sns_b3">
+                        구글로 로그인
+                        <img src="img/login/google.png" alt="">
+                    </a>
+                    <a href="#join" class="sns_b4">
+                        애플아이디로 로그인
+                        <img src="img/login/apple.png" alt="">
+                    </a>
+                </div>
+                <p class="login_p">회원가입을 누름으로써 개인정보약관에 동의하게 됩니다.</p>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="join" data-theme="b">
+            <div data-role="header" class="join_header" data-theme="b">
+                <a class="join_h_btn" href="#login"><i class="fas fa-chevron-left"></i></a>
+                <h1>회원가입</h1>
+            </div>
+            <div data-role="content">
+                <div class="user_box">
+                    <div class="user"><i class="fas fa-user"></i></div>
+                    <a class="plus" href="#none"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="join_list">
+                    <label>
+                        <input data-role="none" type="text" name="username" placeholder="이름(닉네임)">
+                        <a href="#none">중복확인</a>
+                    </label>
+
+                    <label>
+                        <input data-role="none" type="text" name="userid" placeholder="아이디">
+                        <a href="#none">중복확인</a>
+                    </label>
+
+                    <label>
+                        <input data-role="none" type="password" name="password" placeholder="비밀번호">
+                    </label>
+
+                    <label>
+                        <input data-role="none" type="password" name="password2" placeholder="비밀번호 확인">
+                    </label>
+
+                    <div class="check cf">
+                        <input data-role="none" type="checkbox" name="type1" id="type1" checked>
+                        <label for="type1" style="font-size: 13px;" >회원가입 및 이용약관에 동의하시겠습니까?</label>
+                    </div>
+
+                    <a href="#none">SMS 본인인증</a>
+                </div>
+                <a class="login_btn" href="#home">축 하 합 니 다!</a>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="home">
+
+            <!-- home header -->
+            <div data-role="header" class="home_header" data-position="fixed" data-theme="a">
+                <a href="#panel1" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel1" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- content -->
+            <div data-role="content" class="home_content">
+
+                <!-- 아이돌 -->
+                <div class="idol_wrap">
+                    <h4>내가 찜한 아이돌</h4>
+                    <ul class="idol_list">
+                        <li><a href="#none"><img src="img/home/idol-1.png" alt=""></a></li>
+                        <li><a href="#none"><img src="img/home/idol-2.png" alt=""></a></li>
+                        <li><a href="#none"><img src="img/home/idol-3.png" alt=""></a></li>
+                        <li class="plus"><a href="#none"><i class="fas fa-plus"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- event -->
+                <div class="event_banner_wrap" data-role="none">
+                    <ul class="event_banner cf" data-role="none">
+                        <li><img src="img/home/banner-1.png" alt=""></li>
+                        <li><img src="img/home/banner-2.png" alt=""></li>
+                        <li><img src="img/home/banner-3.png" alt=""></li>
+                    </ul>
+                </div>
+
+                <!-- 덕질해요 -->
+                <div class="home_txtbox_wrap">
+                    <h4>같이 덕질해요!
+                        <a href="#map" class="plus"><i class="fas fa-plus"></i></a>
+                    </h4>
+                    <div class="list1">
+                        <ul class="sub_text">
+                            <li>
+                                <a href="#none" class="data cf">
+                                    <p>콘서트 2일차 동행 하실 분?</p>
+                                    <span>짱팬</span>
+                                </a>
+                                <a href="#none" class="data cf">
+                                    <p>6/19 온라인 팬미팅 같이 보실 분 구해요ㅠㅜ</p>
+                                    <span>삼촌</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none" class="data cf">
+                                    <p>블랙핑크 포토카드 분철합니다.</p>
+                                    <span>찬부</span>
+                                </a>
+                                <a href="#none" class="data cf">
+                                    <p>콘서트 2일차 동행 하실 분?</p>
+                                    <span>짱팬</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none" class="data cf">
+                                    <p>6/19 온라인 팬미팅 같이 보실 분 구해요ㅠㅜ</p>
+                                    <span>삼촌팬</span>
+                                </a>
+                                <a href="#none" class="data cf">
+                                    <p>블랙핑크 포토카드 분철합니다.</p>
+                                    <span>찬부</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 최근소식 -->
+                <div class="media_wrap cf">
+                    <h4>최근 소식</h4>
+                    <div class="slide_wrap">
+                        <div>
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/Ja0MZQOWl1w"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div>
+                            <div id="mk-root">
+                                <h2>MK NEWS</h2>
+                                <h3>
+                                    <a href="https://www.mk.co.kr/star/musics/view/2021/09/858099/" target="_blank">
+                                        리사 트랙리스트 공개…테디 프로듀싱
+                                    </a>
+                                </h3>
+                                <div id="mk-left">
+                                    <a href="https://www.mk.co.kr/star/musics/view/2021/09/858099/">
+                                        <img class="fl" width="22%" id="mk-img"
+                                            src=https://file.mk.co.kr/meet/neds/2021/09/image_readtop_2021_858099_16308924994774951.jpg.thumb>
+                                            블랙핑크 리사의 첫 솔로 싱글 앨범 `LALISA` 트랙리스트가 전격 공개됐다. <br>
+                                        6일 YG엔터테인먼트에 따르면 리사의 솔로 싱글 앨범에는
+                                        타이틀곡 `LALISA`와 `MONEY` 2곡이 담겼다. <br>
+                                        인스트루멘탈 (반주) 버전까지 포함하면 총 4개 트랙이다.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/tg2uF3R_Ozo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/QuWple6WhE4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="slide_num">
+                        <ul>
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="slide_like">
+                        <ul>
+                            <li class="bookmark"><a href="#none"></a></li>
+                            <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                            <li class="heart on"><a class="on" href="#none"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 앨범  -->
+                <div class="album">
+                    <h4>앨범 모아듣자! <i class="fas fa-music"></i></h4>
+                    <div>
+                        <a href="#none"><img src="img/home/album_1.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#none"><img src="img/home/album_2.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#none"><img src="img/home/album_3.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#none"><img src="img/home/album_4.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#none"><img src="img/home/album_5.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#none"><img src="img/home/album_6.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- home footer -->
+            <div data-role="footer" data-position="fixed" data-theme="d" class="home_footer">
+                <div data-role="navbar" class="footer_nav">
+                    <ul>
+                        <li><a href="#home" style="font-size: 21px; color: #5b73b4;" class="ui-btn-active"><i
+                                    class="fas fa-home"></i></a></li>
+                        <li><a href="#page2" style="font-size: 21px;"><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="#page3" style="font-size: 21px;"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#page4" style="font-size: 21px;"><i class="far fa-calendar-alt"></i></a></li>
+                        <li><a href="#page5" style="font-size: 21px;"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="profile">
+
+            <!-- profile header -->
+            <div data-role="header" class="profile_header" data-position="fixed" data-theme="a">
+                <a href="#panel" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div data-role="content" class="profile">
+                <div class="profile_top cf">
+                    <h4 class="fl">내 프로필</h4>
+                    <a class="fr" href="#none"><i class="fas fa-pen"></i></a>
+                </div>
+                <div class="profile_wrap cf">
+                    <a class="fl" href="#none"><img src="img/page2/user.png" width="120" alt=""></a>
+                    <div class="profile">
+                        <h5>
+                            덕질메이트1호
+                            <span>(20대 / 여성)</span>
+                        </h5>
+                        <p>
+                            자기소개 란 같이 덕질해요! <br>
+                            같이 덕질해요! <br>
+                        </p>
+                    </div>
+                    <div class="profile_edit">
+                        <a href="#none">프로필 편집</a>
+                    </div>
+                </div>
+
+                <!-- profile comunity -->
+                <div class="profile_comunity">
+                    <div>
+                        <div class="profile_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile_txt">
+                            <img src="img/page2/img_1.jpg" width="120" alt="">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile_txt">
+                            <img src="img/page2/img_1.jpg" width="100" alt="">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="p_comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- page2 footer -->
+            <div data-role="footer" data-position="fixed" data-theme="d" class="profile_footer">
+                <div data-role="navbar" class="footer_nav">
+                    <ul>
+                        <li><a href="#home" style="font-size: 21px;"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#page2" style="font-size: 21px;"><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="#page3" style="font-size: 21px;"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#page4" style="font-size: 21px;"><i class="far fa-calendar-alt"></i></a></li>
+                        <li><a href="#page5" style="font-size: 21px;"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div data-role="page" id="setting">
+
+            <!-- setting header -->
+            <div data-role="header" class="setting_header" data-position="fixed" data-theme="a">
+                <a data-role="none" style="font-size: 20px;" data-rel="back"><i class="fas fa-chevron-left"></i></a>
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+            </div>
+
+            <div data-role="content" style="margin-top: 10px;">
+                <ul class="setting_list" data-role="listview">
+                    <li>
+                        <a href="#none">공개범위</a>
+                    </li>
+                    <li>
+                        <a href="#none">알림설정</a>
+                        <div class="cf">
+                            <label class="fl" for="alarm_set">전체 알림</label>
+                            <select class="fl" data-theme="b" name="alarm_set" id="alarm_set" data-role="slider">
+                                <option value="on">ON</option>
+                                <option value="off">OFF</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">개인정보 변경</a>
+                    </li>
+                    <li>
+                        <a href="#none">로그아웃</a>
+                    </li>
+                    <li>
+                        <a href="#none">회원 탈퇴</a>
+                    </li>
+                    <li>
+                        <a href="#none">개인정보 약관</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="page2">
+
+            <!-- page2 header -->
+            <div data-role="header" class="page2_header" data-position="fixed">
+                <a href="#panel2" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel2" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div data-role="content" class="page2_content">
+                <div class="area_wrap cf">
+                    <ul class="area fl">
+                        <li>만안구 안양동
+                            <ul>
+                                <li>만안구 석수동</li>
+                                <li>만안구 박달동</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="fr" href="#none"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="map_wrap">
+                    <div class="map">
+                        <div id="ggmap">
+                            <div class="container-full-h container-fully-v2">
+
+                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                    <div class="map-block" id="google_map"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map_circle">
+                            <p>내 주변</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <ul data-role="listview">
+                        <li>
+                            <a href="#none" class="cf">
+                                <img src="img/page2/user.png" alt="">
+                                <h5 class="fl">
+                                    블랙핑크팬1호 <br>
+                                    <span>20대 / 여성</span>
+                                </h5>
+                                <p class="follow fr">
+                                    팔로우 요청
+                                </p>
+                                <p class="fr follow_cancel">
+                                    팔로우 취소
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <img src="img/page2/user.png" alt="">
+                                <h5 class="fl">
+                                    블랙핑크팬1호 <br>
+                                    <span>20대 / 여성</span>
+                                </h5>
+                                <p class="follow fr">
+                                    팔로우 요청
+                                </p>
+                                <p class="fr follow_cancel">
+                                    팔로우 취소
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <img src="img/page2/user.png" alt="">
+                                <h5 class="fl">
+                                    블랙핑크팬1호 <br>
+                                    <span>20대 / 여성</span>
+                                </h5>
+                                <p class="follow fr">
+                                    팔로우 요청
+                                </p>
+                                <p class="fr follow_cancel">
+                                    팔로우 취소
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <img src="img/page2/user.png" alt="">
+                                <h5 class="fl">
+                                    블랙핑크팬1호 <br>
+                                    <span>20대 / 여성</span>
+                                </h5>
+                                <p class="follow fr">
+                                    팔로우 요청
+                                </p>
+                                <p class="fr follow_cancel">
+                                    팔로우 취소
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- page2 footer -->
+            <div data-role="footer" data-position="fixed" data-theme="d" class="page2_footer">
+                <div data-role="navbar" class="footer_nav">
+                    <ul>
+                        <li><a href="#home" style="font-size: 21px;"><i class="fas fa-home"></i></a></li>
+                        <li><a class="ui-btn-active" href="#page2" style="font-size: 21px; color: #5b73b4;"><i
+                                    class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="#page3" style="font-size: 21px;"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#page4" style="font-size: 21px;"><i class="far fa-calendar-alt"></i></a></li>
+                        <li><a href="#page5" style="font-size: 21px;"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div data-role="page" id="page3">
+
+            <!-- page3 header -->
+            <div data-role="header" class="page3_header" data-position="fixed">
+                <a href="#panel3" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel3" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div data-role="content" class="page3_content">
+                <div class="page3_top cf">
+                    <ul class="fl">
+                        <li>전체 게시글
+                            <ul>
+                                <li>이슈</li>
+                                <li>구해요</li>
+                                <li>양도,판매</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="fr" href="#none"><i class="fas fa-pen"></i></a>
+                    <a class="fr" href="#none"><i class="fas fa-search"></i></a>
+                </div>
+
+                <!-- page3 comunity -->
+                <div class="comunity">
+                    <div>
+                        <div class="comunity_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <img src="img/page2/img_1.jpg" width="120" alt="">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <img src="img/page2/img_1.jpg" width="100" alt="">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comunity_txt">
+                            <img src="img/page2/img_1.jpg" width="100" alt="">
+                            <strong>콘서트 2일차 동행자 구해요ㅠㅜ</strong>
+                            <p>
+                                안양에서 출발하고 택시 타고 갈 생각입니다.
+                                가나다라 마바사 아자 차카 타파하
+                            </p>
+                        </div>
+                        <div class="comunity_like">
+                            <ul>
+                                <li class="bookmark"><a href="#none"></a></li>
+                                <li><a href="#none"><i class="fas fa-share-alt"></i></a></li>
+                                <li class="heart on"><a class="on" href="#none"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- page3 footer -->
+                <div data-role="footer" data-position="fixed" data-theme="d" class="page3_footer">
+                    <div data-role="navbar" class="footer_nav">
+                        <ul>
+                            <li><a href="#home" style="font-size: 21px;"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#page2" style="font-size: 21px;"><i class="fas fa-map-marker-alt"></i></a></li>
+                            <li><a class="ui-btn-active" href="#page3" style="font-size: 21px; color: #5b73b4;"><i
+                                        class="fas fa-bars"></i></a></li>
+                            <li><a href="#page4" style="font-size: 21px;"><i class="far fa-calendar-alt"></i></a></li>
+                            <li><a href="#page5" style="font-size: 21px;"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div data-role="page" id="page4">
+
+            <!-- page2 header -->
+            <div data-role="header" class="page4_header" data-position="fixed">
+                <a href="#panel4" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel4" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div data-role="content" class="page4_content">
+                <div class="page4_top cf">
+                    <div>
+                        <ul>
+                            <li>1월</li>
+                            <li>2월</li>
+                            <li>3월</li>
+                            <li>4월</li>
+                            <li>5월</li>
+                            <li>6월</li>
+                        </ul>
+                        <div class="page4_arrow fl">
+                           <img src="img/page4/left_arrow.png" class="prev1_1" width="10" alt="left1" />
+                        </div>
+                        <div class="page4_arrow fr">
+                           <img src="img/page4/right_arrow.png" class="next1_1" width="10" alt="right1" />
+                        </div>
+                    </div>
+                    <div class="a_wrap">
+                        <a class="fr" href="#none"><i class="fas fa-pen"></i></a>
+                        <a class="fr" href="#none"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="calender">
+                    <table>
+                        <tr>
+                            <th>SUN</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>TUR</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3
+                                <div>
+                                    <div class="circle_r"></div>
+                                    <p>최애 생일</p>
+                                </div>
+                                <div>
+                                    <div class="circle_g"></div>
+                                    <p>v앱 라이브</p>
+                                </div>
+                            </td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7
+                                <div>
+                                    <div class="circle_g"></div>
+                                    <p>콘서트 첫날</p>
+                                </div>
+                            </td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12
+                                <div>
+                                    <div class="circle_g"></div>
+                                    <p>덕메 만남</p>
+                                </div>
+                            </td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15
+                                <div>
+                                    <div class="circle_r"></div>
+                                    <p>최애 생일</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18
+                                <div>
+                                    <div class="circle_r"></div>
+                                    <p>oo 컴백</p>
+                                </div>
+                            </td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27
+                                <div>
+                                    <div class="circle_g"></div>
+                                    <p>덕메 만남</p>
+                                </div>
+                            </td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="c_event_list">
+                    <h5>다가올 이벤트</h5>
+                    <ul class="cf">
+                        <li class="cf">
+                            <div class="circle_r fl"></div>
+                            1월 3일 최애 생일
+                        </li>
+                        <li class="cf">
+                            <div class="circle_g fl"></div>
+                            1월 3일 v앱 라이브
+                        </li>
+                        <li class="cf">
+                            <div class="circle_g fl"></div>
+                            1월 7일 콘서트 첫날
+                        </li>
+                        <li class="cf">
+                            <div class="circle_g fl"></div>
+                            1월 12일 덕메 만남
+                        </li>
+                        <li class="cf">
+                            <div class="circle_r fl"></div>
+                            1월 15일 최애 생일
+                        </li>
+                        <li class="cf">
+                            <div class="circle_r fl"></div>
+                            1월 18일 oo 컴백
+                        </li>
+                        <li class="cf">
+                            <div class="circle_g fl"></div>
+                            1월 27일 덕메 만남
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- page4 footer -->
+            <div data-role="footer" data-position="fixed" data-theme="d" class="page4_footer">
+                <div data-role="navbar" class="footer_nav">
+                    <ul>
+                        <li><a href="#home" style="font-size: 21px;"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#page2" style="font-size: 21px;"><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="#page3" style="font-size: 21px;"><i class="fas fa-bars"></i></a></li>
+                        <li><a class="ui-btn-active" href="#page4" style="font-size: 21px; color: #5b73b4;"><i class="far fa-calendar-alt"></i></a></li>
+                        <li><a href="#page5" style="font-size: 21px;"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div data-role="page" id="page5">
+
+            <!-- page2 header -->
+            <div data-role="header" class="page5_header" data-position="fixed">
+                <a href="#panel5" style="margin-top: 5px;" data-role="none">
+                    <img src="img/home/user.png" alt="">
+                    <p></p>
+                </a>
+
+                <h1>
+                    <a href="#home" data-role="none">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+
+                <a href="#setting" style="margin-top: 7px;" data-role="none">
+                    <img src="img/setting88.png" style="width: 35px;" alt="">
+                </a>
+            </div>
+
+            <!-- panel -->
+            <div data-role="panel" id="panel5" data-display="overlay" data-theme="c">
+
+                <div data-role="header" class="panel_header" data-position="fixed">
+                    <a href="#profile" style="margin-top: 10px;" class="user_icon" data-role="none">
+                        <img src="img/home/user.png" alt="">
+                        <p></p>
+                    </a>
+                </div>
+
+                <div class="user_wrap" style="margin-top: 60px;">
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 1호</p>
+                        </a>
+                        <div class="fr">13</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_on fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 2호</p>
+                        </a>
+                        <div class="fr">1</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 3호</p>
+                        </a>
+                        <div class="fr">5</div>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 4호</p>
+                        </a>
+                    </div>
+                    <div class="cf">
+                        <a href="#none" class="user_icon_off fl" data-role="none">
+                            <img src="img/home/user.png" alt="">
+                        </a>
+                        <a class="fl" href="#none">
+                            <p>블랙핑크 팬 5호</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div data-role="footer" class="panel_footer">
+                    <div>
+                        <a href="#profile" data-role="none" data-rel="close">내 프로필</a>
+                        <a href="#" data-role="none" data-rel="close">닫기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div data-role="content" class="page5_content">
+                <div class="page5_top cf">
+                    <h4 class="fl">나의 채팅창</h4>
+                    <a class="fr" href="#none"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="chat_wrap">
+                    <div class="cf">
+                        <img class="fl" src="img/page2/user.png" width="60" alt="">
+                        <div class="fl box1">
+                            <strong>블랙핑크팬1호</strong>
+                            <p>같은 그룹 팬이시네요! 같이 덕질하실래요?</p>
+                        </div>
+                        <div class="box2">
+                            <p>21.05.04</p>
+                            <div>1</div>
+                        </div>
+                    </div>
+                    <div class="cf">
+                        <img class="fl" src="img/page2/user.png" width="60" alt="">
+                        <div class="fl box1">
+                            <strong>블랙핑크팬2호</strong>
+                            <p>같은 그룹 팬이시네요! 같이 덕질하실래요?</p>
+                        </div>
+                        <div class="box2">
+                            <p>21.05.04</p>
+                            <div>4</div>
+                        </div>
+                    </div>
+                    <div class="cf">
+                        <img class="fl" src="img/page2/user.png" width="60" alt="">
+                        <div class="fl box1">
+                            <strong>블랙핑크팬3호</strong>
+                            <p>같은 그룹 팬이시네요! 같이 덕질하실래요?</p>
+                        </div>
+                        <div class="box2">
+                            <p>21.05.04</p>
+                            <div>1</div>
+                        </div>
+                    </div>
+                    <div class="cf">
+                        <img class="fl" src="img/page2/user.png" width="60" alt="">
+                        <div class="fl box1">
+                            <strong>블랙핑크팬4호</strong>
+                            <p>같은 그룹 팬이시네요! 같이 덕질하실래요?</p>
+                        </div>
+                        <div class="box2">
+                            <p>21.05.04</p>
+                            <div>1</div>
+                        </div>
+                    </div>
+                    <div class="cf">
+                        <img class="fl" src="img/page2/user.png" width="60" alt="">
+                        <div class="fl box1">
+                            <strong>블랙핑크팬5호</strong>
+                            <p>같은 그룹 팬이시네요! 같이 덕질하실래요?</p>
+                        </div>
+                        <div class="box2">
+                            <p>21.05.04</p>
+                            <div>1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- page5 footer -->
+            <div data-role="footer" data-position="fixed" data-theme="d" class="page5_footer">
+                <div data-role="navbar" class="footer_nav">
+                    <ul>
+                        <li><a href="#home" style="font-size: 21px;"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#page2" style="font-size: 21px;"><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="#page3" style="font-size: 21px;"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#page4" style="font-size: 21px;"><i class="far fa-calendar-alt"></i></a></li>
+                        <li><a class="ui-btn-active" href="#page5" style="font-size: 21px; color: #5b73b4;"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>
+            var map;
+
+            function initMap() {
+                map = new google.maps.Map(
+                    document.getElementById('google_map'), {
+                        center: new google.maps.LatLng(37.3991582, 126.9220866),
+                        zoom: 16
+                    }); //좌표값수정
+
+                var features = [{
+                    position: new google.maps.LatLng(37.3987226, 126.9207285), //좌표값수정
+                    type: 'cafe'
+                }];
+
+                // Create markers.
+                for (var i = 0; i < features.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: features[i].position,
+                        icon: icons[features[i].type].icon,
+                        map: map
+                    });
+                };
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAtAvz4p1Dnsa3riZtfWn31X5arzGLr7I&callback=initMap">
+        </script>
+
+</body>
+
+</html>

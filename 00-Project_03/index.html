@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="러쉬 반응형, 반응형, pascucci">
+   <meta name="description" content="러쉬 반응형 웹 페이지 입니다.">
+   <meta name="Author" content="제작자명">
+   <meta name="Generator" content="Notepad++, vsCode">
+   <title>러쉬</title>
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/media.css">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+   <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+   <script src="js/jquery-1.7.2.min.js"></script>                                                                                                                                                                                                                                                                                                                                                                                                                          
+   <script src="js/jquery.easing.1.3.js"></script>
+   <script src="js/hamberger.js"></script>
+   <script src="js/DB_springMove_fn.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/main_slide.js"></script>
+   <script src="js/index_con2_slide.js"></script>
+
+</head>
+
+<body>
+   <div id="top_btn">
+      <a href="#">TOP</a>
+   </div>
+   <header id="header_wrap">
+      <div id="header">
+         <div id="top_menu_wrap">
+            <h1 class="logo fl"><a href="index.html"><img src="img/logo.png" width="152" alt="logo" /></a></h1>
+            <div id="nav_btn">
+               <div class="btn_bg"></div>
+               <div id="nav_open">
+                  <div class="nav_btn_line1"></div>
+                  <div class="nav_btn_line2"></div>
+                  <div class="nav_btn_line3"></div>
+               </div>
+            </div>
+            <div id="gnb">
+               <ul class="top_gnb">
+                  <li>
+                     <a href="#">
+                        <img src="img/icon_lock.png" width="27" alt="로그인">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="img/icon_search2.png" width="24" alt="검색">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="img/icon_cart.png" width="27" alt="장바구니">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </header>
+   <nav id="nav_wrap">
+      <div id="nav">
+         <div id="nav_btn">
+            <div id="nav_close">
+               <div class="nav_btn_line4"></div>
+               <div class="nav_btn_line5"></div>
+            </div>
+         </div>
+         <div id="nav_menu">
+            <h1><a href="index.html"><img src="img/logo.png" width="185" alt="러쉬"></a></h1>
+            <ul class="depth1">
+               <li>
+                  <div>
+                     <a href="#">LUSH</a>
+                  </div>
+                  <ul class="depth2">
+                     <li><a href="#">러쉬 소개</a></li>
+                     <li><a href="#">러쉬 역사</a></li>
+                     <li><a href="#">러쉬 이념과 식사</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <div>
+                     <a href="#">PRODUCTS</a>
+                  </div>
+                  <ul class="depth2">
+                     <li><a href="#">베스트</a></li>
+                     <li><a href="#">배쓰</a></li>
+                     <li><a href="#">샤워</a></li>
+                     <li><a href="#">바디</a></li>
+                     <li><a href="#">페이스</a></li>
+                     <li><a href="#">헤어</a></li>
+                     <li><a href="#">메이크업</a></li>
+                     <li><a href="#">Special</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">SPA</a>
+               </li>
+               <li>
+                  <div>
+                     <a href="#">EVENT</a>
+                  </div>
+                  <ul class="depth2">
+                     <li><a href="#">채러티팟</a></li>
+                     <li><a href="#">캠페인</a></li>
+                     <li><a href="#">커뮤니티</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <div>
+                     <a href="#">CUSTOMER</a>
+                  </div>
+                  <ul class="depth2">
+                     <li><a href="#">고객센터</a></li>
+                     <li><a href="#">문의</a></li>
+                     <li><a href="#">자주하는 질문</a></li>
+                     <li><a href="#">매장안내</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <section>
+      <div id="main_img">
+         <div id="slide_img_wrap1">
+            <div class="arrow-down">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div id="slide_btn">
+               <div class="slide_stop">
+                  <ul>
+                     <li class="sd_stop">
+                        <a href="#">stop</a>
+                     </li>
+                     <li class="sd_start">
+                        <a href="#">play</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="slide_num">
+                  <ul>
+                     <li class="on"><a href="#">1</a></li>
+                     <li><a href="#">2</a></li>
+                     <li><a href="#">3</a></li>
+                     <li><a href="#">4</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="slide_pc_main">
+               <div class="pc_main visual_0">
+                  <video autoplay muted loop poster="img/index/pc_main1.png" id="videoBg">
+                     <source src="img/vid/video2.mp4" type="video/mp4">
+                  </video>
+                  <div class="txt1">
+                     <h2><span>new</span><br>The Golden cap</h2>
+                     <p>
+                        질 좋은 버터와 신선한 과일, 채소를 가득 담아<br>
+                        건강한 머리카락에 도움을 주는 고체 타임의 컨디셔너입니다!<br>
+                        황금빛 머릿결의 주인공은 바로 당신이에요!
+                     </p>
+                     <a href="#none">자세히</a>
+                  </div>
+               </div>
+               <div class="pc_main visual_1">
+                  <img src="img/index/pc_main2-1.png" alt="banner2">
+                  <div class="txt2">
+                     <h2><span>이 세상 모든</span><br>엄마 아빠에게</h2>
+                     <p>
+                        <span>[NEW] 2021 마더스 & 파더스</span><br><br>
+                        엄마 아빠의 위대함에서 영감을 받은<br>
+                        러쉬 마더스&파더스 에디션을 소개합니다!
+                     </p>
+                     <a href="#none">자세히</a>
+                  </div>
+               </div>
+               <div class="pc_main visual_2">
+                  <img src="img/index/pc_main3.png" alt="banner3">
+                  <div class="txt3">
+                     <h2><span>Bath Bomb</span><br>BUTTERBEAR</h2>
+                     <p>
+                        공정하게 얻은 촉촉한 코코아 버터가 듬뿍 담긴<br>
+                        '버터베어'의 품에 안겨 바닐라 향기에 푹 빠져보세요!
+                     </p>
+                     <a href="#none">자세히</a>
+                  </div>
+               </div>
+               <div class="pc_main visual_3">
+                  <img src="img/index/pc_main4.png" alt="banner4">
+                  <div class="txt4">
+                     <h2><span>perfume</span><br>DIRTY</h2>
+                     <p>
+                        스피어민트의 기분 좋은 활기!<br>
+                        상쾌한 스피어민트, 타임 허브와 타라곤의 만남은 <br>
+                        당신에게 잊혀지지 않은 순간을 선물해줄 거예요
+                     </p>
+                     <a href="#none">자세히</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="main_cont1">
+         <div id="cont1_list">
+            <input id="best" type="radio" name="tab" checked="checked" />
+            <input id="new" type="radio" name="tab" />
+            <section class="buttons">
+               <label for="best">BEST</label>
+               <p>|</p>
+               <label for="new">NEW</label>
+            </section>
+            <div class="conts" id="cont1">
+               <div class="cont">
+                  <div class="cont1_slide1 cf">
+                     <div class="slide1_1 fl cf active">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide1_1.png" width="530" alt="img1">
+                           <figcaption>
+                              <p><span>DIRTY BODY SPRAY</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont1_Tbox fl">
+                           <h3>
+                              DIRTY<br>BODY SPRAY<br>
+                           </h3>
+                           <h4>
+                              더티 보디 스프레이<br>
+                              &#8361;50,000
+                           </h4>
+                           <p>
+                              뒤돌아보게 하는 향기! <br>
+                              피부에 뿌려 사용하는 제품으로 향기가 인상적입니다. <br>
+                              타라곤과 타임 꽃의 향기는 상쾌함을, <br>
+                              감미로운 샌달우드와 라벤더는 섬세한 무드를 연출합니다. <br>
+                              당신에게 잊혀지지 않는 순간을 선물하세요.
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 조**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              '러쉬'하면 떠오르는 가장 거칠고 기억에 남는 중성적인 매력의 더티 스프레이!<br>
+                              잔향은 말할 것도 없지만 첫 더티와의 만남은 머릿속에서 잊혀질래야 잊혀질 수가 없죠:-)<br>
+                              남녀노소 모두가 좋아할 중성적이지만 터프한 향입니다!
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/1_1.png" width="260" alt="review1">
+                        </div>
+                     </div>
+                     <div class="slide1_2 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide1_2.png" width="530" alt="img2">
+                           <figcaption>
+                              <p><span>SEX BOMB</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont1_Tbox fl">
+                           <h3>
+                              BATH BOMB<br>SEX BOMB
+                           </h3>
+                           <h4>
+                              <span>
+                                 섹스밤<br>
+                                 &#8361;12,000
+                              </span>
+                           </h4>
+                           <p>
+                              자스민, 클레리, 일랑일랑 꽃이 가득! <br>
+                              사랑스러운 하루를 보내고 싶으신가요? <br>
+                              사랑스러운 비밀을 알려드릴게요. <br>
+                              욕조에 피어오르는 꽃 한 송이는 사랑을 이루어주고, <br>
+                              로맨틱한 순간을 선사합니다.
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 정**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              '지친 하루의 마지막은 항상 섹스밤과 함께해요:-)<br>
+                              러쉬에서 저만의 시그니처 제품이라 할 수 있는 섹스밤:)<br>
+                              힘든 날 꺼내서 쓰면 기분전환되고, 여행가서 쓰면 기분이 2배로 좋아져요ㅎㅎ
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/1_2.png" width="260" alt="review2">
+                        </div>
+                     </div>
+                     <div class="slide1_3 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide1_3.png" width="530" alt="img3">
+                           <figcaption>
+                              <p><span>MASK OF MAGNAMINTY</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont1_Tbox fl">
+                           <h3>
+                              MASK OF <br>MAGNAMINTY
+                           </h3>
+                           <h4>
+                              <span>
+                                 마스크 오브 매그너민티<br>
+                                 &#8361;20,000
+                              </span>
+                           </h4>
+                           <p>
+                              페퍼민트의 향기에 바닐라의 달콤함이 살짝! <br>
+                              얼굴과 몸에 영양을 듬뿍 선사하는 워시 오프 팩으로 <br>
+                              건강한 피부로 가꾸는 데 도움을 줍니다. <br>
+                              청량감을 가득 머금은 페퍼민트 오일의 힘으로 온몸 구석구석에 <br>
+                              청량감을 선사하세요. 이보다 더 상쾌할 수 있을까요?
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 손**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              뚜껑 여는 순간 풍겨지는 민트향 덕분에 여름더위 다 날라가는 기분. <br>
+                              냉장고에 보관하다 사용하면 대.박.시.원! <br>
+                              팩 하는 순간 뿐만 아니라 팩하고나서도 민트가 흡수돼서 그런지 피부 속이
+                              시원한 느낌이라 너무 좋다<br>
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/1_3.png" width="260" alt="review3">
+                        </div>
+                     </div>
+                     <div class="slide1_4 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide1_4.png" width="530" alt="img4">
+                           <figcaption>
+                              <p><span>IMTERGALACTIC</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont1_Tbox fl">
+                           <h3>
+                              BATH BOMB<br>IMTERGALACTIC
+                           </h3>
+                           <h4>
+                              <span>
+                                 인터갈락틱<br>
+                                 &#8361;17,000
+                              </span>
+                           </h4>
+                           <p>
+                              싱그러운 페퍼민트와 자몽이 입욕에 상쾌함을! <br>
+                              빛나는 별, 황상적인 우주 폭발, 빛의 소용돌이 속에서 <br>
+                              안락함을 느껴보세요. <br>
+                              산뜻한 기분을 선사하는 페퍼민트와 샌달우드는 <br>
+                              환상적인 입욕 시간을 선물해 줍니다.
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 진**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              러쉬 인터갈락틱과 함께 욕조타고 우주여행 <br>
+                              배쓰밤이 물과 만나는 순간 눈 앞에 펼쳐지는 은하수는 말이 필요없을만큼 황홀하네요. <br>
+                              상쾌한 향기에 촉촉함까지.....! <br>
+                              인터갈라틱은 말이 필요없어요 후회없는 선택입니다. <br>
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/1_4.png" width="260" alt="review4">
+                        </div>
+                     </div>
+                     <div class="slide1_5 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide1_5.png" width="530" alt="img5">
+                           <figcaption>
+                              <p><span>SEA VEGETABLE</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont1_Tbox fl">
+                           <h3>
+                              SEA<br>VEGETABLE
+                           </h3>
+                           <h4>
+                              <span>
+                                 씨 베지터블<br>
+                                 &#8361;10,000
+                              </span>
+                           </h4>
+                           <p>
+                              라벤더와 라임이 선사하는 특별한 순간!<br>
+                              자연에서 얻은 신선한 원재료와<br>
+                              질 좋은 에센셜 오일이 듬뿍 담긴 솝(비누)입니다.<br>
+                              눈 앞에 바다가 펼쳐진 것 같은 착각이 드실 거예요.<br>
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 서**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              냄새가 너무 쿨하고 좋아요!<br>
+                              제가 러쉬바디솝 정말 좋아하는데 그동안 썼던것 중에 진짜 다섯손가락안에
+                              들 정도로 정말 좋습니다ㅠㅠ<br>
+                              피부에 바로 문질러서 사용하는데 거품도 적당히 나오고,안에 해초가 들어있어요! 고운 소금으로 스크럽 효과도 있어요.
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/1_5.png" width="260" alt="review5">
+                        </div>
+                     </div>
+                  </div>
+                  <div id="section_arrow1">
+                     <div class="arrow1">
+                        <div class="arrow1_1">
+                           <div class="arrow1_1_center">
+                              <p class="prev"><i class="fas fa-chevron-left prev fl"></i></p>
+                              <p class="next"><i class="fas fa-chevron-right next fr"></i></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section_number1">
+                     <p class="bl">1 / 5</p>
+                     <p>2 / 5</p>
+                     <p>3 / 5</p>
+                     <p>4 / 5</p>
+                     <p>5 / 5</p>
+                  </div>
+               </div>
+            </div>
+            <div class="conts" id="cont2">
+               <div class="cont">
+                  <div class="cont2_slide1 cf">
+                     <div class="slide2_1 fl cf active">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide2_1.png" width="530" alt="img1">
+                           <figcaption>
+                              <p><span>SLEEPY</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont2_Tbox fl">
+                           <h3>
+                              BODY LOTION<br>SLEEPY<br>
+                           </h3>
+                           <h4>
+                              슬리피<br>
+                              &#8361;22,000
+                           </h4>
+                           <p>
+                              라벤더와 통카가 부르는 향기로운 자장가!<br>
+                              이 제품은 자연에서 얻은 건강한 원재료를 듬뿍 담아<br>
+                              피부에 놀라운 촉촉함을 선사합니다.<br>
+                              섬세한 향기를 풍기는 라벤더와 부드러운 오트밀이<br>
+                              당신의 피부를 부드럽게 어루만집니다. 또, 공정하게 얻은<br>
+                              코코아 버터는 촉촉함을 더해줄 거예요.
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 최**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              슬리피 좋아해서 또 구매했어요!
+                              버블바로 쓰고 바디로션 바디워시까지,,
+                              향을 맡으면 몸도 마은도 편해져서 너무 좋아요
+                              진짜 최고야~~
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/2_1.png" width="260" alt="review1">
+                        </div>
+                     </div>
+                     <div class="slide2_2 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide2_2.png" width="530" alt="img2">
+                           <figcaption>
+                              <p><span>TISTY TOSTY</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont2_Tbox fl">
+                           <h3>
+                              BATH BOMB<br>TISTY TOSTY
+                           </h3>
+                           <h4>
+                              <span>
+                                 티스티 토스티<br>
+                                 &#8361;15,000
+                              </span>
+                           </h4>
+                           <p>
+                              장미와 레몬, 오리스 뿌리 가루의 조합은 마치 사랑의 포옹을 연상시킵니다.<br>
+                              발렌타인 데이를 위한 러쉬 클래식의 귀환!<br>
+                              수면위로 피어오르는 아름다운 꽃잎을 관찰해보세요.<br>
+                              TIP! 위대한 힘을 품고 있는 사랑의 묘약도 한 방울 더했답니다. 믿거나 말거나..
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 박**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              히노끼 탕에 들어가서 사용하기 위해 색이 거의 없는 배쓰밤을 찾다가
+                              이용하게 되었습니다.<br>
+                              향이 너무 인위적이지도, 강하지도 않아서 따뜻한 물에서 사용하니
+                              안락하고 편안한 느낌으로 사용하기 좋더라구요!<br>
+                              둥둥 떠다니는 미니 장미들도 귀엽고 예뻐서 잘 사용했습니다!<br>
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/2_2.png" width="260" alt="review2">
+                        </div>
+                     </div>
+                     <div class="slide2_3 fl cf">
+                        <figure class="snip1200 fl">
+                           <img src="img/index/slide2_3.png" width="530" alt="img3">
+                           <figcaption>
+                              <p><span>THE RETROSPECTIVE <br>DISCOVERY KIT</span><br> 보러가기</p>
+                           </figcaption>
+                           <a href="#none"></a>
+                        </figure>
+                        <div class="cont2_Tbox fl">
+                           <h3>
+                              THE RETROSPECTIVE <br>DISCOVERY KIT
+                           </h3>
+                           <h4>
+                              <span>
+                                 더 레트로스펙티브 디스커버리 키트<br>
+                                 &#8361;140,000
+                              </span>
+                           </h4>
+                           <p>
+                              이 퍼퓸 기프트는 러쉬를 대표하는 네가지 향기를 담고 있습니다. <br>
+                              공정하게 얻은 질 좋은 원료를 기본으로 하는 네가지 퍼퓸은 <br>
+                              언제나 한결같은 러쉬의 신념을 표현합니다. <br>
+                              우리는 세상을 아름다운 향기로 가득 채울 수 있다는 것을 믿습니다. <br>
+                           </p>
+                        </div>
+                        <div class="review fr">
+                           <p>
+                              <span>
+                                 황**님의 리뷰<br>
+                                 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+                              </span>
+                              <br><br>
+                              기프트용으로 또 나를 위한 선물로 너무 좋은 디스커버리 시리즈 <br>
+                              레트로스펙티브 제품에는 러쉬에서 사랑받는 베스트셀러 퍼퓸들이 <br>
+                              들어있어요.
+                           </p>
+                           <div class="more"><a href="#none">후기 더보기</a></div>
+                           <img src="img/index/2_3.png" width="260" alt="review3">
+                        </div>
+                     </div>
+                  </div>
+                  <div id="section_arrow2">
+                     <div class="arrow2">
+                        <div class="arrow2_1">
+                           <div class="arrow2_1_center">
+                              <p class="prev"><i class="fas fa-chevron-left prev fl"></i></p>
+                              <p class="next"><i class="fas fa-chevron-right next fr"></i></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section_number2">
+                     <p class="bl">1 / 3</p>
+                     <p>2 / 3</p>
+                     <p>3 / 3</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="main_cont2">
+         <div id="cont2_list">
+            <ul class="cont_slide">
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide1.png" alt="cont2-slide1" width="130">
+                     <p>
+                        섹스밤<br>
+                        <span>#로맨틱 #섹시한밤 #일랑일랑꽃</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide2.png" alt="cont2-slide2" width="130">
+                     <p>
+                        마스크 오브 매그너민티<br>
+                        <span>#꿀의촉촉함 #데일리팩 #민트팩</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide3.png" alt="cont2-slide3" width="130">
+                     <p>
+                        트와일라잇<br>
+                        <span>#보디스프레이 #차분한달콤함</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide4.png" alt="cont2-slide4" width="130">
+                     <p>
+                        더 컴포터<br>
+                        <span>#영화속주인공처럼 #거품입욕로망</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide5.png" alt="cont2-slide5" width="130">
+                     <p>
+                        슬리피 버블바<br>
+                        <span>#버블바 #라벤더와통카</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide6.png" alt="cont2-slide6" width="130">
+                     <p>
+                        뷰티슬립<br>
+                        <span>#아름다움의비결 #라벤더</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide7.png" alt="cont2-slide7" width="130">
+                     <p>
+                        대디-오<br>
+                        <span>#오래머무는잔향 #베스트샴푸</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide8.png" alt="cont2-slide8" width="130">
+                     <p>
+                        사쿠라<br>
+                        <span>#배쓰밤 #기분좋은벚꽃향기</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide9.png" alt="cont2-slide9" width="130">
+                     <p>
+                        허니 아이 워시드 더 키즈<br>
+                        <span>#솝 #달콤한꿀이뚝뚝</span>
+                     </p>
+                  </a>
+               </li>
+               <li class="cont_slide_item">
+                  <a href="#none">
+                     <img src="img/index/cont2-slide10.png" alt="cont2-slide10" width="130">
+                     <p>
+                        빅<br>
+                        <span>#보디스크레이 #우아한네롤리</span>
+                     </p>
+                  </a>
+               </li>
+            </ul>
+            <div class="prev22_1 fl">
+               <img src="img/index/icon-left.png" class="prev1_1" width="30" alt="left1" />
+            </div>
+            <div class="next22_2 fr">
+               <img src="img/index/icon-right.png" class="next1_1" width="30" alt="right1" />
+            </div>
+         </div>
+      </div>
+      <div id="main_cont3">
+         <div id="cont3_wrap">
+            <div class="cont3_tit">
+               <h2>LUSH NEWS</h2>
+               <p>러쉬의 최근 소식을 알아보세요!</p>
+            </div>
+            <div class="con3_list">
+               <div class="con3_list1">
+                  <a href="#none">
+                     <img src="img/index/cont3-1.png" height="350" alt="">
+                     <p>
+                        <span>CAMPAIGN</span> <br>
+                        동물대체시험법<br>
+                        촉진 법안 통과를 위해<br>
+                        서명해 주세요
+                     </p>
+                  </a>
+               </div>
+               <div class="con3_list2">
+                  <a href="#none">
+                     <img src="img/index/cont3-2.png" height="350" alt="">
+                     <p>
+                        <span>EVENT</span> <br>
+                        꽁꽁!<br>
+                        무더위를 얼리다
+                     </p>
+                  </a>
+               </div>
+               <div class="con3_list3">
+                  <a href="#none">
+                     <img src="img/index/cont3-3.png" height="350" alt="">
+                     <p>
+                        <span>NOTICE</span> <br>
+                        코로나19<br>
+                        예방을 위한<br>
+                        매장 운영 안내
+                     </p>
+                  </a>
+               </div>
+               <div class="con3_list4">
+                  <a href="#none">
+                     <img src="img/index/cont3-4.png" height="350" alt="">
+                     <p>
+                        <span>SHOWER SCRUB</span> <br>
+                        부드럽게 소금 롤링
+                     </p>
+                  </a>
+               </div>
+               <div class="con3_list5">
+                  <a href="#none">
+                     <img src="img/index/cont3-5.png" height="350" alt="">
+                     <p>
+                        <span>SPA</span> <br>
+                        오감을 깨워<br>
+                        몸과 마음에 진정한<br>
+                        휴식을 선사합니다
+                     </p>
+                  </a>
+               </div>
+            </div>
+         </div id="cont3_wrap">
+      </div>
+      <div id="main_cont4">
+         <div id="cont4_wrap">
+            <div class="cont4_tit">
+               <h2>LUSH STORE</h2>
+               <p>가까운 러쉬 매장을 찾아보세요.</p>
+            </div>
+            <div class="store_search">
+               <form action="#">
+                  <input type="text"  placeholder="매장명 또는 주소">
+                  <button class="search_btn">찾기</button>
+               </form>
+            </div>
+         </div>
+         <div id="icon_box">
+            <ul>
+               <li>
+                  <img src="img/index/iconbox_1.png" alt="">
+               </li>
+               <li>
+                  <img src="img/index/iconbox_2.png" alt="">
+               </li>
+               <li>
+                  <img src="img/index/iconbox_3.png" alt="">
+               </li>
+               <li>
+                  <img src="img/index/iconbox_4.png" alt="">
+               </li>
+               <li>
+                  <img src="img/index/iconbox_5.png" alt="">
+               </li>
+               <li>
+                  <img src="img/index/iconbox_6.png" alt="">
+               </li>
+            </ul>
+         </div>
+         <div class="sns_site">
+            <p>매주 금요일 오후, 구독자님들에게 뉴스레터를 보내드립니다. <br>
+               구독은 언제든지 해지하실 수 있습니다.
+            </p>
+            <form action="#">
+               <input type="text"  placeholder="이메일 주소를 입력해주세요.">
+               <button class="search_btn">구독하기</button>
+            </form>
+         </div>
+      </div>
+      <footer>
+         <div id="footer_wrap">
+            <ul class="bottom_nav">
+               <li><a href="#">스카우트</a></li>
+               <li><a href="#">회사소개</a></li>
+               <li class="color"><a href="#">개인정보처리방침</a></li>
+               <li><a href="#">영상정보관리지침</a></li>
+               <li><a href="#">이용약관</a></li>
+               <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="foot">
+               <div class="logo">
+                  <img src="img/logo_f.png" width="150" alt="logo">
+               </div>
+               <p class="copy_info">
+                  <span>서울 서초구 서운로 138(서초동아타워)6층</span>
+                  <span>사업자등록번호:201-81-77964</span>
+                  <span>대표이사:우미령</span>
+               </p>
+               <p class="copy_info">
+                  <span>고객센터. 1644-2357 / webmaster@lush.co.kr</span>
+                  <span class="foot_display">고객센터. 1644-2357 / oeder@lush.co.kr</span>
+               </p>
+               <p class="last_bottom">
+                  CORYRIGHT &copy; 2021 THE PASCUCCI. ALL RIGHTS RESERVED.
+               </p>
+               <div class="sns_site">
+                  <p>매주 금요일 오후, <br> 구독자님들에게 뉴스레터를 보내드립니다. <br>
+                     구독은 언제든지 해지하실 수 있습니다.
+                  </p>
+                  <form action="#">
+                     <input type="text"  placeholder="이메일 주소를 입력해주세요.">
+                     <button class="search_btn">구독하기</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </section>
+   
+</body>
+
+</html>

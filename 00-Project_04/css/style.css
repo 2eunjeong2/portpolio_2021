@@ -1,0 +1,1406 @@
+@charset "utf-8";
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/* 초기화 */
+* {margin: 0; padding: 0; border: 0; outline: 0; box-sizing: border-box;}
+
+.fl {float: left;}
+.fr {float: right;}
+.cb {clear: both;}
+.cl {clear: left;}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ul,li {list-style: none;}
+
+a:link {text-decoration: none;}
+.hidden {display: none;}
+img {padding: 0; margin: 0; border: 0; }
+html{overflow-y: scroll; overflow-x: hidden;}
+
+body{
+    font-family: 'NanumSquare', sans-serif;
+}
+
+#login, #join, #home, #profile, #setting, #page2, #page3, #page4, #page5{
+    overflow-y: hidden;
+}
+
+
+/* 로그인 */
+.logo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.logo img{
+    width: 100%;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    color: #5B73B4;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin: 10% 0 23% 0;
+    font-size: 1.6em;
+}
+.login_box{
+    text-align: center;
+}
+.login_box p{
+    color: #888888;
+}
+.login_box > a{
+    position: relative;
+    display: block;
+    width: 90%;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 20px;
+    margin: 7px auto;
+    color: #333333;
+    font-size: 17px;
+    font-weight: normal;
+}
+.login_box > a > img{
+    width: 28px;
+    float: right;
+    right: 30px;
+    position: absolute;
+    top: 6px;
+}
+.login_p{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #888888;
+}
+
+
+/* join*/
+#join .join_header{
+    height: 60px;
+}
+#join .join_header h1{
+    font-size: 25px;
+    letter-spacing: 0.5em;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+}
+#join .join_h_btn{
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 6px 0;
+    transition: all 0.3s;
+    line-height: 40px;
+    font-size: 22px;
+}
+.user_box{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.user_box .user{
+    display: block;
+    font-size: 80px;
+    width: 150px;
+    height: 150px;
+    background-color: #e7e6e6;
+    border-radius: 50%;
+    margin: 10% auto;
+    line-height: 150px;
+    color: #999999;
+}
+.user_box .plus{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    bottom: 0;
+    line-height: 30px;
+    right: 10px;
+    text-align: center;
+    color: #666666;
+}
+.user_box .plus:hover{
+    background: #5B73B4;
+    border: 1px solid #5B73B4;
+    color: #ffffff;
+}
+
+.join_list{
+    margin-top: 10%;
+    width: 100%;
+}
+.join_list label{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.join_list label a{
+    position: absolute;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    right: 10%;
+    font-weight: bold;
+    color: #5B73B4;
+    font-size: 16px;
+}
+.join_list label input{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    height: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.join_list .check{
+    height: 50px;
+}
+.join_list .check input{
+    float: left;
+    margin: 15px 0 0 40px;
+}
+.join_list .check label{
+    text-align: center;
+    padding-top: 15px;
+}
+.join_list > a{
+    display: block;
+    width: 90%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #5B73B4;
+    font-size: 18px;
+}
+.login_btn{
+    display: block;
+    width: 40%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    border: 2px solid #5B73B4;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 0;
+}
+
+
+/* home */
+/* home header */
+.home_header{
+    height: 60px;
+    position: relative;
+}
+.home_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.home_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.home_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.home_header > a img{
+    width: 40px;
+}
+.home_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+/* panel */
+.panel_header{
+    height: 60px;
+}
+.panel_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.panel_header > a img{
+    width: 40px;
+}
+.panel_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.user_wrap > div{
+    height: 60px;
+    padding: 9px 0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.user_wrap > div .user_icon_on {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.user_wrap > div .user_icon_on img{
+    width: 40px;
+}
+.user_wrap > div .user_icon_on{
+    border: 2px solid #a8da91;
+}
+
+.user_wrap > div .user_icon_off {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.user_wrap > div .user_icon_off img{
+    width: 40px;
+}
+.user_wrap > div .user_icon_off{
+    border: 2px solid #cfcfcf;
+}
+
+
+.user_wrap > div .user_name{
+    display: block;
+    width: 100%;
+}
+.user_wrap > div p{
+    line-height: 40px;
+}
+.user_wrap > div div{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #5B73B4;
+    margin: 5px 0;
+}
+
+.panel_footer{
+    height: 70px;
+}
+.panel_footer div{
+    width: 95%;
+    margin: 0 auto;
+}
+.panel_footer a{
+    display: inline-block;
+    width: 46%;
+    height: 40px;
+    margin: 15px 1%;
+    text-align: center;
+    background: #5B73B4;
+    line-height: 40px;
+}
+
+/* home_content */
+.home_content h4{
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.idol_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.idol_list{
+    width: 200%;
+    height: 100px;
+}
+.idol_list li{
+    float: left;
+    margin-right: 10px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #888888;
+}
+.idol_list li.plus{
+    border: 1px solid #888888;
+}
+.idol_list li a{
+    color: #888888;
+}
+
+.idol_list li img{
+    width: 100%;
+}
+
+.event_banner_wrap{
+    width: 100%;
+    height: 180px;
+    padding: 10px 0;
+}
+
+.event_banner_wrap ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.event_banner_wrap ul li{
+    position: absolute;
+    width: 100%;
+    float: left;
+    left: 0;
+}
+.event_banner_wrap img{
+    width: 100%;
+}
+
+.event_banner_wrap ul li:nth-child(1) {
+    left: 0%;
+}
+
+.event_banner_wrap ul li:nth-child(2) {
+    left: 100%;
+}
+
+.event_banner_wrap ul li:nth-child(3) {
+    left: 200%;
+}
+
+
+
+/* 함께해요 */
+.home_txtbox_wrap{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.home_txtbox_wrap h4{
+    position: relative;
+}
+.home_txtbox_wrap .plus{
+    display: inline-block;
+    font-size: 15px;
+    color: #666666;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    box-sizing: border-box;
+}
+
+.home_txtbox_wrap  .list1 ul{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.home_txtbox_wrap  .list1 ul li{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 100%;
+    letter-spacing: -1px;
+}
+.home_txtbox_wrap  .list1 ul li p{
+    width: 85%;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    float: left;
+}
+.home_txtbox_wrap  .list1 ul li span{
+    float: right;
+    width: 15%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+.home_txtbox_wrap  .list1 a.data{
+    line-height: 40px;
+    color: #555555;
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+}
+
+
+/* media */
+.media_wrap{
+    margin: 30px 0 20px 0;
+}
+.slide_wrap{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.slide_wrap > div{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    float: left;
+}
+
+.slide_wrap div:nth-child(1){
+    left: 0;
+}
+.slide_wrap div:nth-child(2){
+    left: 100%;
+}
+.slide_wrap div:nth-child(3){
+    left: 200%;
+}
+.slide_wrap div:nth-child(4){
+    left: 300%;
+}
+
+.slide_num ul{
+    width: 92px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.slide_num ul li{
+    float: left;
+}
+.slide_num .on a{
+    background: url(../img/slide_num_over.png) no-repeat left center;
+    background-size: 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    margin-right: 3px;
+}
+.slide_num li a{
+    background: url(../img/slide_num.png) no-repeat left center;
+    background-size: 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    margin-right: 3px;
+}
+
+.slide_like{
+    float: right;
+}
+.slide_like li{
+    float: left;
+    margin-right: 7px;
+}
+
+.bookmark a{
+    background: url(../img/home/book.png) no-repeat center center;
+    background-size: 17px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.bookmark a.on{
+    background: url(../img/home/book_on.png) no-repeat center center;
+    background-size: 17px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+.heart a{
+    background: url(../img/home/heart.png) no-repeat center center;
+    background-size: 17px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.heart a.on{
+    background: url(../img/home/heart_on.png) no-repeat center center;
+    background-size: 17px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+
+
+/* 기사 */
+#mk-root{
+    width:100%; 
+    height: 250px; 
+    box-sizing: border-box; 
+    text-align: left; 
+    clear: both; 
+    font-size: 15px; 
+    line-height: 28px; 
+    margin: 0; 
+    padding: 5px; 
+    border: 1px solid #CCC;
+    display: block;
+}
+#mk-root h2{
+    margin: 0; 
+    border: 0; 
+    background: #ff7800;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 7px 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+#mk-root h3{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1px; 
+    text-align: left;
+}
+#mk-root div img{
+    margin-right: 5px;
+}
+#mk-root div a{
+    line-height: 0.8em;
+}
+
+/* album */
+.album{
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+.album >div{
+    width: 31%;
+    margin: 1%;
+    float: left;
+    overflow: hidden;
+}
+.album >div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+/* home footer */
+.home_footer{
+    height: 60px;
+}
+.footer_nav ul li a{
+    display: block;
+    height: 60px;
+    font-size: 40px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* profile */
+/* profile header */
+.profile_header{
+    height: 60px;
+    position: relative;
+}
+.profile_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.profile_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.profile_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.profile_header > a img{
+    width: 40px;
+}
+.profile_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.profile_top h4{
+    font-size: 20px;
+    color: #5B73B4;
+    line-height: 40px;
+}
+.profile_top a{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.profile_wrap{
+    width: 100%;
+    padding: 15px 0;
+}
+.profile_wrap > a{
+    display: block;
+    width: 120px;
+    margin-right: 20px;
+}
+.profile_wrap div{
+    height: 120px;
+}
+.profile_wrap div h5{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.profile_wrap div h5 span{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+.profile_wrap div p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.profile_wrap .profile_edit{
+    width: 95%;
+    margin: 0 auto;
+    height: 45px;
+    border: 1px solid #cdcdcd;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile_comunity{
+    width: 100%;
+}
+.profile_comunity > div{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 210px;
+    margin: 1%;
+    border: 2px solid #a5c9eb;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.profile_txt{
+    height: 160px;
+    overflow-y: auto;
+}
+.profile_txt img{
+    display: block;
+}
+.profile_txt strong{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.profile_txt p{
+    font-size: 14px;
+}
+
+.p_comunity_like{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.p_comunity_like li{
+    float: left;
+    margin-right: 7px;
+}
+
+
+
+
+
+
+/* setting */
+/* setting header */
+.setting_header{
+    height: 60px;
+    position: relative;
+}
+.setting_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.setting_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.setting_header > a {
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.setting_list{
+    width: 100%;
+}
+.setting_list li{
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+}
+.setting_list li > a{
+    display: block;
+    font-size: 18px;
+    line-height: 60px;
+}
+.setting_list li > div{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+.setting_list li > div label{
+    line-height: 50px;
+    margin-right: 15px;
+    color: #555555;
+    font-size: 14px;
+}
+
+
+/* page2 map */
+/* page2 header */
+.page2_header{
+    height: 60px;
+    position: relative;
+}
+.page2_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.page2_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.page2_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.page2_header > a img{
+    width: 40px;
+}
+.page2_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.area{
+    position: relative;
+    font-size: 20px;
+    color: #5B73B4;
+    font-weight: bold;
+    width: 150px;
+    margin-bottom: 10px;
+    background: url(../img/page2/down_arrow.png) no-repeat right 15px;
+    background-size: 12px;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.area li{
+    line-height: 40px;
+    
+}
+.area ul{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    display: none;
+    background: #ffffff;
+}
+.area ul li{
+    line-height: 40px;
+    background: #ffffff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.area_wrap a{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* 지도영역 */
+.map{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #666666;
+    margin-bottom: 40px;
+}
+#ggmap{
+	margin-left:0%;
+}
+#ggmap .map-block {
+    height: 450px;
+	margin-bottom:0;
+}
+
+.map_circle{
+    position: relative;
+    margin: 0 auto;
+    margin-top: -390px;
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    background: rgba(171, 180, 230, 0.3);
+    text-align: center;
+}
+.map_circle p{
+    position: absolute;
+    color: #4c5f92;
+    font-weight: bold;
+    font-size: 30px;
+    height: 30px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    letter-spacing: 50%;
+}
+
+/* 유저 목록 */
+.user_list{
+    width: 95%;
+    margin: 0 auto;
+}
+.user_list ul li{
+    height: 80px;
+    padding: 0 15px;
+}
+.user_list ul li a{
+    position: relative;
+    display: block;
+    height: 80px;
+}
+.user_list ul li a img{
+    width: 60px;
+    padding-top: 10px;
+}
+.user_list ul li a h5{
+    height: 80px;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    margin-left: -20px;
+}
+.user_list ul li a h5 span{
+    font-size: 13px;
+}
+.user_list ul li a p{
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    background-color: #a5c9eb;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 35px;
+    font-weight: bold;
+    border-radius: 7px;
+    right: 0;
+    z-index: 10;
+}
+.user_list ul li a p.follow:hover{
+    background-color: #9b5997;
+}
+.user_list ul li a p.follow_cancel{
+    background-color: #9b5997;
+    display: none;
+}
+
+
+/* page3 comunity */
+/* page3 header */
+.page3_header{
+    height: 60px;
+    position: relative;
+}
+.page3_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.page3_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.page3_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.page3_header > a img{
+    width: 40px;
+}
+.page3_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.page3_top ul{
+    position: relative;
+    font-size: 20px;
+    color: #5B73B4;
+    font-weight: bold;
+    width: 150px;
+    margin-bottom: 10px;
+    background: url(../img/page2/down_arrow.png) no-repeat right 15px;
+    background-size: 12px;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.page3_top ul li{
+    line-height: 40px;
+    
+}
+.page3_top ul li ul{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    display: none;
+    background: #ffffff;
+}
+.page3_top ul li ul li{
+    line-height: 40px;
+    background: #ffffff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.page3_top a{
+    line-height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+
+.comunity{
+    width: 100%;
+}
+.comunity > div{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 210px;
+    margin: 1%;
+    border: 2px solid #a5c9eb;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.comunity_txt{
+    height: 160px;
+    overflow-y: auto;
+}
+.comunity_txt img{
+    display: block;
+}
+.comunity_txt strong{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+}
+.comunity_txt p{
+    font-size: 13px;
+}
+
+.comunity_like{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.comunity_like li{
+    float: left;
+    margin-right: 7px;
+}
+
+
+/* page4 calender */
+/* page4 header */
+.page4_header{
+    height: 60px;
+    position: relative;
+}
+.page4_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.page4_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.page4_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.page4_header > a img{
+    width: 40px;
+}
+.page4_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.page4_top{
+    position: relative;
+    width: 100%;
+}
+.page4_top > div{
+    width: 130px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.page4_top > div ul{
+    font-size: 20px;
+    color: #5B73B4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 780px;
+}
+.page4_top > div ul li{
+    text-align: center;
+    float: left;
+    line-height: 40px;
+    width: 130px;
+}
+
+.page4_arrow{
+    margin-top: -28px;
+    cursor: pointer;
+} 
+
+.a_wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.a_wrap a{
+    line-height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.calender{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.calender table{
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+.calender table th{
+    height: 35px;
+    width: calc(100%/7);
+    font-size: 18px;
+    background-color: #a5c9eb;
+    color: #ffffff;
+}
+.calender table td{
+    height: 70px;
+    width: calc(100%/7);
+    font-size: 12px;
+    padding: 7px;
+    border: 1px solid #ebebeb;
+    vertical-align: text-top;
+}
+.calender table td div{
+    padding-top: 5px;
+}
+.calender table td div p{
+    font-size: 10px;
+}
+
+.circle_r{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #d44444;
+}
+.circle_g{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #599e56;
+}
+
+.c_event_list{
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    margin-top: 20px;
+    padding: 10px;
+}
+.c_event_list h5{
+    font-size: 16px;
+    line-height: 25px;
+    color: #5B73B4;
+}
+.c_event_list ul li{
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 5px 10px;
+    width: 50%;
+    letter-spacing: -1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.c_event_list ul li > div{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+
+
+
+/* page5 calender */
+/* page5 header */
+.page5_header{
+    height: 60px;
+    position: relative;
+}
+.page5_header h1{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.page5_header h1 img{
+    height: 40px;
+    width: 100%;
+    line-height: 60px;
+}
+.page5_header > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.page5_header > a img{
+    width: 40px;
+}
+.page5_header > a p{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d44444;
+    bottom: 3px;
+    left: 30px;
+}
+
+.page5_top h4{
+    font-size: 20px;
+    color: #5B73B4;
+    line-height: 40px;
+}
+.page5_top a{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.chat_wrap{
+    width: 100%;
+    margin-top: 20px;
+}
+.chat_wrap > div{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 2px solid #a5c9eb;
+    border-radius: 10px;
+    padding: 9px 5px;
+    margin-bottom: 7px;
+    letter-spacing: -1px;
+}
+
+.chat_wrap > div img{
+    margin-right: 10px;
+}
+
+.chat_wrap > div .box1{
+    padding: 5px 0;
+    width: 70%;
+    height: 80px;
+}
+.chat_wrap > div .box1 strong{
+    font-size: 16px;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.chat_wrap > div .box1 p{
+    font-size: 13px;
+    margin-top: 8px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chat_wrap > div .box2{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 40px;
+    padding: 15px 5px;
+    text-align: center;
+}
+.chat_wrap > div .box2 p{
+    font-size: 11px;
+}
+.chat_wrap > div .box2 div{
+    width: 27px;
+    height: 27px;
+    background: #5B73B4;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 27px;
+}
